@@ -6,8 +6,19 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import FootGuide from './components/FootGuide/FootGuide.vue'
 export default {
+  mounted() {
+    // this.$store.dispatch('getAddress')
+    this.getAddress()
+    this.getUserInfo()
+  },
+
+  methods: {
+    ...mapActions(['getAddress', 'getUserInfo'])
+  },
+
   components: {
     FootGuide
   }

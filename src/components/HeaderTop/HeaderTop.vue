@@ -29,12 +29,11 @@ export default {
               position absolute
               left 15px
               top 50%
-              transform translateY(-50%)
+              transform translateY(-70%)
               width 10%
               height 50%
-              .icon-sousuo
-                font-size 25px
-                color #fff
+              font-size 25px
+              color #fff
             .header_title
               position absolute
               top 50%
